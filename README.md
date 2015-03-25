@@ -1,6 +1,8 @@
 # Easy Digital Downloads Paddle Integration
 Paddle Integration as a payment processor for easy digital downloads
 
+Feel free to test how this works on my website : http://easy-development.com/wordpress-plugins/
+
 # Setup
 1. Install the plugin
 2. Go to Easy Digital Downloads -> Settings
