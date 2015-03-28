@@ -24,7 +24,7 @@ class EDDPaddleIntegration {
   public $paddleAPIActionGeneratePayLink = 'api/2.0/product/generate_pay_link';
   public $apiURLIdentifier               = 'edd_paddle_api';
 
-  public $paddlePopupCheckoutSetupJS = 'http://paddle.s3.amazonaws.com/checkout/checkout-woocommerce.js';
+  public $paddlePopupCheckoutSetupJS = '//paddle.s3.amazonaws.com/checkout/checkout-woocommerce.js';
 
   public static function instance() {
     if(self::$_instance == null)
@@ -228,6 +228,10 @@ class EDDPaddleIntegration {
 
     if(get_post_meta($paymentID, $this->postPurchaseTypeStorage, true) != 'popup')
       return '';
+
+    if(edd_get_payment_completed_date($paymentID) !== false)
+      return '';
+
 
     wp_enqueue_script('edd_paddle_integration', $this->paddlePopupCheckoutSetupJS, array('jquery'));
 
