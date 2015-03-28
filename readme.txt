@@ -12,7 +12,7 @@ EED Paddle.com integration as a payment processor
 
 == Description ==
 
-EED Paddle.com integration as a payment processor
+Easy Digital Downloads Paddle.com integration as a payment processor
 
 == Installation ==
 
