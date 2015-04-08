@@ -3,7 +3,7 @@
 Plugin Name: Easy Digital Downloads Paddle Integration
 Plugin URI: http://wordpress.org/plugins/easy-digital-downloads-paddle-integration/
 Description: Easy Digital Downloads Paddle Integration
-Version: 1.0.0
+Version: 1.0.1
 Author: Andrei-Robert Rusu
 Author URI: http://www.easy-development.com
 */
