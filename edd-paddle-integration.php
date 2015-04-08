@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Easy Digital Downloads Paddle Integration
-Plugin URI: http://www.easy-development.com
+Plugin URI: http://wordpress.org/plugins/easy-digital-downloads-paddle-integration/
 Description: Easy Digital Downloads Paddle Integration
 Version: 1.0.0
 Author: Andrei-Robert Rusu
@@ -97,6 +97,7 @@ class EDDPaddleIntegration {
       'prices'            => array(edd_get_currency() . ':' . $paymentPrice),
       'discountable'      => 0,
       'quantity_variable' => 0,
+      'return_url'        => get_permalink( $edd_options['success_page'] ),
       'webhook_url'       => get_bloginfo('url') . '?' . build_query(array(
           $this->apiURLIdentifier => 'true',
           'payment_id'            => $payment,
